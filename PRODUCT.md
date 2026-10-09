@@ -1,0 +1,5 @@
+# Taiki Yamashita portfolio
+Personal engineering portfolio for recruiters and collaborators. English, based in Honolulu. Source: owner-supplied LinkedIn text, October 8, 2026; existing repository for personal imagery and email.
+Current roles: Forward Deployed Software Engineer at Raft (July 2026–present), Software Engineer part time at Geolabs (July 2026–present). Previous Geolabs engineering/IT September 2024–July 2026 and internship June–September 2024. AI evaluation at DataAnnotation September 2025–April 2026; UCI teaching January 2024–June 2025; NSF research June–August 2024.
+Verified work: Geolabs enterprise platform, RAG over 8,000+ reports, OCR/indexing with approximately 40% search latency improvement; NIH data research over 400K+ participants and 10M+ records. No invented demo links or employment claims.
+Owner requests a complete professional template-inspired visual replacement, many animations, GitHub changes and update of existing taikiyamashita.com deployment. Preserve React/CRA. Contact email in incumbent: taikiy49@gmail.com. LinkedIn: /in/taikiyamashita. GitHub: Taikiy49.

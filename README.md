@@ -1,46 +1,31 @@
-<div align="center">
-  <h1>PersonalWebsite</h1>
-  <p><strong>Taiki Yamashita’s React portfolio with projects, experience, skills, photography, and interactive components.</strong></p>
-  <p>
-    <img alt="React" src="https://img.shields.io/badge/React-303840?style=flat-square" />
-    <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-303840?style=flat-square" />
-    <img alt="CSS" src="https://img.shields.io/badge/CSS-303840?style=flat-square" />
-  </p>
-  <p><a href="#overview">Overview</a> · <a href="#getting-started">Getting started</a> · <a href="#repository-map">Repository map</a></p>
-</div>
+# Taiki Yamashita
 
----
+React portfolio for Taiki Yamashita: full-stack engineering, applied AI, and mission-focused software. Content updated from the owner’s LinkedIn profile in October 2026.
 
-## Overview
+## Develop
 
-Taiki Yamashita’s personal portfolio: a React site bringing together projects, experience, skills, achievements, photography, and contact information.
-
-## What’s inside
-
-- Dedicated components for projects, experience, achievements, and skills.
-- Photo galleries backed by the repository’s original images.
-- Interactive terminal, theme controls, and animated interface elements.
-
-## Getting started
-
-Install Node.js, then:
-
-```sh
+```
 npm ci
 npm start
+npm run build
+CI=true npm test -- --watchAll=false --runInBand
 ```
 
-Run `npm run build` for the production bundle or `npm test` for the existing React test runner. Content is maintained directly in the React components and media in `public/`.
+The existing Create React App architecture is retained. `src/App.jsx` owns the portfolio, data, accessible navigation, and canvas terrain. `src/styles/PortfolioSite.css` owns visual tokens and responsive/motion behavior. Original legacy components remain available but are not mounted.
 
-## Repository map
+## Design and content
 
-| Location | Purpose |
-| --- | --- |
-| [`src/App.jsx`](./src/App.jsx) | Application composition |
-| [`src/components/`](./src/components/) | Portfolio sections and interactive components |
-| [`src/styles/`](./src/styles/) | Component styles |
-| [`public/`](./public/) | Photographs, icons, and public files |
+See `PRODUCT.md` for authoritative content and `DESIGN.md` for visual intent. Project illustrations are conceptual, clearly labeled, and do not expose internal software or research results. Contact links use email and LinkedIn. No simulated form submission or invented demo links.
 
-## Project status
+Self-hosted Archivo and Manrope fonts use the SIL Open Font License; licenses live in `public/fonts/`. `public/images/taiki.webp` is optimized from the repository’s original `taiki18.jpg`.
 
-Personal portfolio under ongoing development. The repository homepage records the existing deployment; content and interaction components should be reviewed before a new release.
+## Deployment
+
+Vercel project: `personal-website`, connected to `Taikiy49/PersonalWebsite`, production branch `main`.
+Existing public address: https://personal-website-flax-five.vercel.app
+Canonical custom domain: https://www.taikiyamashita.com
+The apex domain is configured to redirect to www. On October 8, 2026, public DNS returned NXDOMAIN and the registrar availability check reported the domain available. Registration/DNS must be restored before the custom domain can serve the site; do not assume the Vercel attachment proves registration ownership.
+
+## Verification
+
+Production build, interaction tests for navigation/Escape and synchronized motion controls/contact destination, plus browser inspection at desktop and mobile sizes. Reduced motion removes decorative animation; pause buttons stop looping effects. Native document scrolling and semantic links/disclosures remain available.
