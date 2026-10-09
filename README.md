@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+<div align="center">
+  <h1>PersonalWebsite</h1>
+  <p><strong>Taiki Yamashita’s React portfolio with projects, experience, skills, photography, and interactive components.</strong></p>
+  <p>
+    <img alt="React" src="https://img.shields.io/badge/React-303840?style=flat-square" />
+    <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-303840?style=flat-square" />
+    <img alt="CSS" src="https://img.shields.io/badge/CSS-303840?style=flat-square" />
+  </p>
+  <p><a href="#overview">Overview</a> · <a href="#getting-started">Getting started</a> · <a href="#repository-map">Repository map</a></p>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Taiki Yamashita’s personal portfolio: a React site bringing together projects, experience, skills, achievements, photography, and contact information.
 
-### `npm start`
+## What’s inside
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Dedicated components for projects, experience, achievements, and skills.
+- Photo galleries backed by the repository’s original images.
+- Interactive terminal, theme controls, and animated interface elements.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting started
 
-### `npm test`
+Install Node.js, then:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm ci
+npm start
+```
 
-### `npm run build`
+Run `npm run build` for the production bundle or `npm test` for the existing React test runner. Content is maintained directly in the React components and media in `public/`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Repository map
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Location | Purpose |
+| --- | --- |
+| [`src/App.jsx`](./src/App.jsx) | Application composition |
+| [`src/components/`](./src/components/) | Portfolio sections and interactive components |
+| [`src/styles/`](./src/styles/) | Component styles |
+| [`public/`](./public/) | Photographs, icons, and public files |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project status
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Personal portfolio under ongoing development. The repository homepage records the existing deployment; content and interaction components should be reviewed before a new release.
