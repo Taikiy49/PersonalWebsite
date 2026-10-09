@@ -1603,3 +1603,37 @@ summary {
     padding-right: max(6%, env(safe-area-inset-right));
   }
 }
+
+/* Owner-provided portraits, kept in their original colors. */
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  flex-shrink: 0;
+}
+.about-photo img {
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  filter: none;
+}
+@media (max-width: 700px) {
+  .profile-avatar {
+    width: 52px;
+    height: 52px;
+  }
+  .hero-intro {
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+  .hero-intro .intro-rule {
+    width: 15px;
+  }
+  .about-photo img {
+    height: auto;
+    aspect-ratio: 1;
+  }
+}

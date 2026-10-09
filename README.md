@@ -17,7 +17,7 @@ The existing Create React App architecture is retained. `src/App.jsx` owns the p
 
 See `PRODUCT.md` for authoritative content and `DESIGN.md` for visual intent. Project illustrations are conceptual, clearly labeled, and do not expose internal software or research results. Contact links use email and LinkedIn. No simulated form submission or invented demo links.
 
-Self-hosted Archivo and Manrope fonts use the SIL Open Font License; licenses live in `public/fonts/`. `public/images/taiki.webp` is optimized from the repository’s original `taiki18.jpg`.
+Self-hosted Archivo and Manrope fonts use the SIL Open Font License; licenses live in `public/fonts/`. `public/images/profile-small.webp` and `about.webp` are optimized from the owner-supplied seaside suit and kimono portraits.
 
 ## Deployment
 

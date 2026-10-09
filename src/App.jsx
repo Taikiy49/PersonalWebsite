@@ -412,8 +412,15 @@ function App() {
         <section className="hero" id="home">
           <div className="hero-copy">
             <div className="hero-intro">
-              <span className="status-dot" /> Taiki Yamashita{" "}
-              <span className="intro-rule" /> Software engineer
+              <img
+                className="profile-avatar"
+                src="/images/profile-small.webp"
+                width="64"
+                height="64"
+                alt="Taiki Yamashita"
+                fetchPriority="high"
+              />{" "}
+              Taiki Yamashita <span className="intro-rule" /> Software engineer
             </div>
             <h1>
               <span>From complexity.</span>
@@ -584,11 +591,11 @@ function App() {
         <section id="about" className="about-section section-wrap">
           <div className="about-photo" data-reveal>
             <img
-              src="/images/taiki.webp"
-              width="720"
-              height="960"
+              src="/images/about.webp"
+              width="1000"
+              height="1000"
               loading="lazy"
-              alt="Taiki Yamashita at Pixar Pier"
+              alt="Taiki Yamashita wearing a black kimono at a shrine"
             />
             <span>Outside the editor.</span>
           </div>
