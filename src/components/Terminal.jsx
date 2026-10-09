@@ -2,12 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaTerminal, FaPlay } from 'react-icons/fa';
 import '../styles/Terminal.css';
 
-const Terminal = () => {
-  const [currentCommand, setCurrentCommand] = useState(0);
-  const [displayText, setDisplayText] = useState('');
-  const [isTyping, setIsTyping] = useState(false);
-
-  const commands = [
+const commands = [
     {
       input: "whoami",
       output: "taiki@geolabs:~$ Software Engineer & AI Enthusiast"
@@ -51,35 +46,36 @@ Although practicality beats purity.`
     }
   ];
 
-  useEffect(() => {
-    if (!isTyping) {
-      const timer = setTimeout(() => {
-        setIsTyping(true);
-        typeCommand();
-      }, 2000);
-      return () => clearTimeout(timer);
-    }
-  }, [currentCommand, isTyping]);
+const Terminal = () => {
+  const [currentCommand, setCurrentCommand] = useState(0);
+  const [displayText, setDisplayText] = useState('');
 
-  const typeCommand = () => {
+  useEffect(() => {
     const command = commands[currentCommand];
     let i = 0;
     const fullText = `$ ${command.input}\n${command.output}`;
-    
-    const typeInterval = setInterval(() => {
-      setDisplayText(fullText.substring(0, i));
-      i++;
-      
-      if (i > fullText.length) {
-        clearInterval(typeInterval);
-        setTimeout(() => {
-          setCurrentCommand((prev) => (prev + 1) % commands.length);
-          setDisplayText('');
-          setIsTyping(false);
-        }, 3000);
-      }
-    }, 50);
-  };
+    let typeInterval;
+    let advanceTimer;
+    const startTimer = setTimeout(() => {
+      typeInterval = setInterval(() => {
+        setDisplayText(fullText.substring(0, i));
+        i++;
+        if (i > fullText.length) {
+          clearInterval(typeInterval);
+          advanceTimer = setTimeout(() => {
+            setCurrentCommand((prev) => (prev + 1) % commands.length);
+            setDisplayText('');
+          }, 3000);
+        }
+      }, 50);
+    }, 2000);
+
+    return () => {
+      clearTimeout(startTimer);
+      clearInterval(typeInterval);
+      clearTimeout(advanceTimer);
+    };
+  }, [currentCommand]);
 
   return (
     <section id="terminal" className="terminal-section">
